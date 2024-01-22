@@ -4,7 +4,10 @@ import { TOKEN_SECRET } from "../config.js";
 export const authRequired = async(req, res, next) => {
     try {
         const {token} = req.cookies
-
+        console.log('token')
+        console.log(token)
+        console.log('body')
+        console.log(req.headers)
         if(!token){
             return res.status(401).json({message: 'token invalido'})
         }

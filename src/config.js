@@ -7,4 +7,4 @@ export const TOKEN_SECRET = 'tasks project'
 
 export const PORT_BACK_END = 5000
 
-export const URI_DB = 'mongodb+srv://rcorreal2:ZMJ9LAkJ6IwrOEP1@cluster0.qkklljm.mongodb.net/MongoDBCourse?retryWrites=true&w=majority'
+export const URI_DB = process.env.URI_DB || ''
